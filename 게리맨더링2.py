@@ -46,13 +46,13 @@ for x in range(1, n-1):
                     tmp[sx][sy] = 5
                 if out:
                     continue
-                x4, y4 = sx, sy
 
                 for i in range(x):
                     for j in range(y1+1):
                         if tmp[i][j] == 5:
                             break
                         tmp[i][j] = 1
+                        
                 for i in range(x, n):
                     for j in range(y3):
                         if tmp[i][j] == 5:
